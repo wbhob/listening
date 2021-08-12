@@ -83,7 +83,7 @@ export default function Home() {
         )}
       >
         <Head>
-          <title>Create Next App</title>
+          <title>Listen with Wilson</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -91,10 +91,10 @@ export default function Home() {
           <div className="fixed top-4 right-4">
             <button
               onClick={() => setDark((d) => !d)}
-              className="p-2 bg-gray-200 rounded"
+              className="p-2 bg-gray-200 rounded dark:bg-gray-700"
             >
               <span className="sr-only">Enable dark mode</span>
-              <MoonIcon className="w-6 h-6 text-gray-600" />
+              <MoonIcon className="w-6 h-6 text-gray-400 dark:text-gray-400" />
             </button>
           </div>
           {!!data && !data?.offline ? (
